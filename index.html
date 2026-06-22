@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anclaterra - Piscinas, terrazas y más</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="top-bar__languages">
+      <a href="#">ESP</a>
+      <a href="#">ENG</a>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <div class="main-nav__brand">
+      <a href="index.html"><img src="logo.png" alt="Ancla Terra" class="brand-logo"></a>
+    </div>
+    <div class="main-nav__links">
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://rosagres.com/descargas/" target="_blank">Catálogos</a>
+      
+
+    </div>
+    <div class="main-nav__actions">
+      <a href="https://rosagres.com/" target="_blank"><img src="rosagres_logo.png" alt="Ancla Terra" class="brand-logo-rosagres"></a>
+      <!-- <a href="#" class="icon-button" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon-button" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="icon-button" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+      <button id="menu-open" type="button" class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <button id="menu-close" type="button" class="mobile-menu__close" aria-label="Cerrar menú">&times;</button>
+    <div class="mobile-menu__links">
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://rosagres.com/descargas/" target="_blank">Catálogos</a>
+    </div>
+  </div>
+
+  <!-------------------------------------------*/
+  /*                  HERO SLIDE               */
+  /*-------------------------------------------->
+  <section class="hero-carousel" id="hero-carousel">
+    
+    <div class="hero-slide hero-slide--active">
+      <img src="img/1-Lopesan-air.jpg" alt="Piscina moderna" class="hero-image efecto-zoom-in">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--light">
+        <h1 class="hero-slide__title">Proyectos Únicos</h1>
+        <p class="hero-slide__text">Texturas y materiales únicos que envuelven cada día en un escenario vibrante de agua y color.</p>
+        <a href="#" class="button button--accent">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="img/2- Jarabacoa-piscina.jpg" alt="Piscina desbordante" class="hero-image efecto-pan-right">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--teal">
+        <h1 class="hero-slide__title">Piscina en Serena Nero, Jarabacoa, RD</h1>
+        <p class="hero-slide__text">Descubre una dimensión en revestimientos donde el diseño y la textura marcan la diferencia.</p>
+        <a href="#productos" class="button button--light">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="img/3- escalera.jpg" alt="Acabado antideslizante" class="hero-image efecto-tilt-down">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--dark">
+        <h1 class="hero-slide__title">Escalera</h1>
+        <p class="hero-slide__text">Escalera escalera escalera escalera escalera escalera escalera escalera escalera escalera .</p>
+        <a href="#" class="button button--light">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="img/4- Bonao-piscina.jpg" alt="Terraza interior y exterior" class="hero-image efecto-pan-left">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--pink">
+        <h1 class="hero-slide__title">Terraza en Pietro White, piscina en Tresor Java, Bonao, RD</h1>
+        <p class="hero-slide__text">Elegancia visual infinita que convierte cada piscina en una obra de arte.</p>
+        <a href="#" class="button button--light">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="img/5-Santiago-piscina.jpg" alt="Acabado antideslizante" class="hero-image efecto-tilt-up">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--dark">
+        <h1 class="hero-slide__title">Piscina en Tresor Java, Santiago, RD</h1>
+        <p class="hero-slide__text">No se mancha, no se descolora, no se raya. Resistencia y estética para toda la vida.</p>
+        <a href="#" class="button button--light">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="img/6- piscina-montana.jpg" alt="Proyectos únicos" class="hero-image efecto-zoom-out">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__panel panel--grey">
+        <h1 class="hero-slide__title">Piso Antideslizante</h1>
+        <p class="hero-slide__text">Seguridad elegante en cada paso: piso antideslizante para tranquilidad en áreas mojadas.</p>
+        <a href="#" class="button button--light">Conocer Más</a>
+      </div>
+    </div>
+
+    <div class="hero-carousel__dots" aria-label="Navegación de slides"></div>
+  </section>
+
+  <!------------------------------------------------+
+  |                 1er INTERMEDIO                  |
+  +------------------------------------------------->
+ <section id="1-intermedio" class="section">
+    <div class="section__intro animate-on-scroll">
+      <h1 class="section__heading">Excelencia en Porcelánico</h1>
+      <p class="section__description">Distribuimos las colecciones más exclusivas de Rosa Gres. Materiales diseñados para resistir el paso del tiempo, elevar la estética de cualquier entorno y garantizar la máxima seguridad con tecnología Anti-slip.</p>
+    </div>
+ </section>
+  
+ <!-------------------------------------------------+
+  |          PRODUCTOS: en la web de Rosa Gres      |
+  +------------------------------------------------->
+  <section id="productos" class="section products-section">
+    <!-- <div class="products-flex"> -->
+      <div class="product_panel animate-on-scroll panel_piscina">
+        <h2 class="product__title">Piscinas</h2>
+        <p class="product__text">Texturas y materiales únicos que envuelven cada día en un escenario vibrante de agua y color.</p>
+        <ul class="product-features">
+          <li>
+            <a href="https://rosagres.com/piscina-porcelanico/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Piscinas de Gres Porcelánico</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/piscinas-desbordantes/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Piscinas Desbordantes con Rejillas de Gres Porcelánico</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/rehabilitacion-piscinas/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Rehabilitación de Piscinas con New Look System</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/escaleras-piscinas-soluciones-gres-porcelanico/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Escaleras y Soluciones de Gres Porcelánico para Piscinas</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/sistemas-constructivos-piscinas/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Sistemas Constructivos para Piscinas Desbordantes</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/piscina-deportiva/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Piscina Deportiva</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product_panel animate-on-scroll panel_pavimentos">
+        <h2 class="product__title">Pavimentos</h2>
+        <p class="product__text">Texturas y materiales únicos que envuelven cada día en un escenario vibrante de agua y color.</p>
+        <ul class="product-features">
+          <li>
+            <a href="https://rosagres.com/terrazas-suelos-para-exteriores/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Terrazas y Suelos para Exteriores</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/suelos-exterior-antideslizantes" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Suelos Antideslizantes de Gres Porcelánico</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/suelos-interior-y-escaleras-coordinacion-in-out/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Interiores y Escaleras. Coordinación de Interior y Exterior</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/canaleta-de-desague-de-gres-porcelanico/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Canaleta de desagüe de Gres Porcelánico</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/suelo-industrial/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Gres porcelánico Anti-bacterias para Espacios Industriales</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/cocina-industrial/" target="_blank" class="feature-item">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>Gres porcelánico Anti-bacterias para Cocinas Industriales</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="product_panel animate-on-scroll panel_colecciones">
+        <h2 class="product__title">Colecciones</h2>
+        <p class="product__text">Texturas y materiales únicos que envuelven cada día en un escenario vibrante de agua y color.</p>
+        <ul class="product-features">
+          <li>
+            <a href="https://rosagres.com/colecciones/cuore/" target="_blank" class="feature-item cuora-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>CUORE</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/sophy/" target="_blank" class="feature-item sophy-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>SOPHY</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/coral/" target="_blank" class="feature-item coral-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>CORAL</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/mythos/" target="_blank" class="feature-item mythos-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>MYTHOS</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/iconic/" target="_blank" class="feature-item iconic-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>ICONIC</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/tresor/" target="_blank" class="feature-item tresor-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>TRÉSOR</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/alma/" target="_blank" class="feature-item alma-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>ALMA</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/stela/" target="_blank" class="feature-item stela-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>STELA</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/pietro/" target="_blank" class="feature-item pietro-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>PIETRO</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/serena/" target="_blank" class="feature-item serena-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>SERENA</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/mistery/" target="_blank" class="feature-item mistery-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>MISTERY</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/aqua/" target="_blank" class="feature-item pool-aqua-prusia-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>SPORT POOLS</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://rosagres.com/colecciones/indugres/" target="_blank" class="feature-item indugres-biostop-bg">
+              <span class="feature-icon"><i class="fas fa-check"></i></span>
+              <span>INDUGRES 100% BIOSTOP</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+  </section> 
+
+  <!------------------------------------------------>
+  <!--               2do INTERMEDIO               -->
+  <!------------------------------------------------>
+  <section id="2-intermedio" class="section intermedio-section-white">
+    <div class="section__intro animate-on-scroll">
+      <h2 class="section__heading">Diseño y rendimiento para cada espacio</h2>
+      <p class="section__description">Creamos espacios que destacan por su belleza, resistencia y funcionalidad. Nuestros revestimientos de gres porcelánico ofrecen soluciones de alto rendimiento para proyectos residenciales, comerciales y hoteleros, tanto en interiores como en exteriores. Cada proyecto recibe la atención personalizada y el respaldo técnico que garantizan resultados excepcionales y duraderos.</p>
+    </div>
+  </section>
+
+  <!------------------------------------------------>
+  <!--               CONTACTOS                    -->
+  <!------------------------------------------------>
+  <section id="contacto" class="section contact-section">
+    <div class="contact-section__layout">
+
+      <!------------- Contact Forma Panel ----------------->
+      <div class="contact-panel animate-on-scroll">
+        <h2>Comunícate con nosotros</h2>
+        <div id="form-message" class="form-message" style="display: none;"></div>
+        <!--------------------- Contact Form ------------------->
+        <form id="contactForm" class="contact-form" novalidate>
+          <label class="form-field">
+            <!-- <span class="form-field__label">Nombre</span> -->
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+          </label>
+          <label class="form-field">
+            <!-- <span class="form-field__label">Empresa</span> -->
+            <input type="text" id="empresa" name="empresa" placeholder="Empresa" required>
+          </label>
+          <label class="form-field">
+            <!-- <span class="form-field__label">Teléfono</span> -->
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+          </label>
+          <label class="form-field">
+            <!-- <span class="form-field__label">Email</span> -->
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </label>
+          <label class="form-field">
+            <!-- <span class="form-field__label">Mensaje here</span> -->
+            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button button--primary">Enviar</button>
+            <button type="reset" class="button button--secondary">Limpiar</button>
+          </div>
+        </form>
+      </div>
+
+      <!------------- Contact Info Panel ----------------->
+      <div class="contact-panel contact-info animate-on-scroll">
+        <h2>Contactos</h2>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> <a href="tel:+18094821224">+1.809.482.1224</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/18092661666" target="_blank">+1.809.266.1666</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/18094816055" target="_blank">+1.809.481.6055</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@anclaterra.com" class="contact-email">info@anclaterra.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Calle Rafael Abreu Licairac, 258 <br> Los Prados, Distrito Nacional <br> Santo Domingo, República Dominicana</li>
+        </ul>
+      </div>
+
+      <!------------- Rosa Gres Panel ----------------->
+      <div class="info-rosagress-section animate-on-scroll">
+        <div class="info-rosagress-desktop__logo">
+          <img src="rosagres_logo.png" alt="Ancla Terra Logo">
+        </div>
+        <p>Creamos revestimientos modernos, duraderos y de alto rendimiento para piscinas, terrazas y todo tipo de espacios interiores y exteriores, acompañados siempre de una atención personalizada.</p>
+      </div>
+      
+    </div>
+
+  </section>
+
+  <!------------------------------------------------>
+  <!--          DESCARGA CATALOGOS CTS            -->
+  <!------------------------------------------------>
+  <section id="descarga-catalogos-cta" class="section intermedio-section-white descarga-catalogos-cta">
+    <div class="section__intro animate-on-scroll">
+      <h2 class="section__heading">Descarga nuestros catálogos</h2>
+      <p class="section__description">Inspírate con nuestras colecciones y accede a las fichas técnicas completas. Descarga los catálogos para ver medidas, acabados y soluciones recomendadas para piscinas, terrazas y espacios exteriores.</p>
+      <a href="https://rosagres.com/descargas/" target="_blank" class="button button--accent button--large" aria-label="Descargar catálogos">Descargar Catálogos</a>
+    </div>
+  </section>
+
+  <!-- /*------------------------------------------*/
+  /*                  FOOTER                  */
+  /*------------------------------------------*/ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <div class="footer-row">
+          <img src="logo_footer.png" alt="Rosa Gres Logo" class="footer-logo">
+          <div class="footer-text">Distribuidor exclusivo de <a href="https://rosagres.com/" class="contact-rosa-gres" target="_blank">Rosa Gres</a> para el Caribe.</div>
+        </div>
+        <div class="footer-row footer-copyright">
+          <div class="footer-copyright-text">&copy; 2026 Anclaterra.</div>
+        </div>
+      </div>
+      <!-- <div class="footer-column">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div> -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
