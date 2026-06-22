@@ -680,11 +680,7 @@ h2 {
 
 /*--- Colecciones BG ---*/
 .cuora-bg {
-<<<<<<< HEAD
   background-image: url("img/cuore-verde.webp");
-=======
-  background-image: url("/img/cuore-verde.webp");
->>>>>>> 28fe2856227c248e4524e367b25c2b45eab7a196
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
