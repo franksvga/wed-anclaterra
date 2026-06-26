@@ -563,6 +563,15 @@ h2 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .panel--dark,
+  .panel--pink,
+  .panel--teal,
+  .panel--grey,
+  .panel--light-blue {
+    background: none !important;
+    backdrop-filter: none !important;
+  }
 }
 
 /*--------------------------------
@@ -798,7 +807,7 @@ h2 {
   }
 
   .hero-slide__text {
-    font-size: clamp(1rem, 2.1vw, 1.4rem);
+    display: none;
   }
 
   .button {
