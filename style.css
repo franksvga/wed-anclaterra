@@ -453,6 +453,7 @@ h2 {
   margin: 0 0 1rem;
   font-size: clamp(1.75rem, 2.1vw, 2.1rem);
   line-height: 1.05;
+  color: #414141;
 }
 
 .hero-slide__text {
@@ -570,8 +571,14 @@ h2 {
   .panel--teal,
   .panel--grey,
   .panel--light-blue {
-    background: none !important;
+    /* background: none !important; */
     backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
   }
 }
 
@@ -846,8 +853,8 @@ h2 {
     align-items: center;
     padding: 1rem 1.25rem;
     border-radius: 1rem;
-    border: 1px solid #d2d2d2; /* rgb(15, 23, 42);*/
-    background: white; /*rgba(229, 229, 229, 0.88); /* rgba(255, 255, 255, 0.88); */
+    border: 1px solid #d2d2d2;
+    /* background: white; */
     color: var(--color-black);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
   }
