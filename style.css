@@ -415,7 +415,7 @@ h2 {
 }
 
 .panel--light {
-  color: var(--color-black);
+  color: var(--color-white);
   background: var(--color-panel-light);
 }
 
@@ -564,6 +564,7 @@ h2 {
     padding-right: 1rem;
   }
 
+  .panel--light,
   .panel--dark,
   .panel--pink,
   .panel--teal,
@@ -1295,7 +1296,6 @@ button:disabled {
 }
 
 /* ------------------------------------ */
-/* ------------------------------------ */
 /*           TABLETRESOLUTION           */
 /* ------------------------------------ */
 @media (min-width: 768px) {
@@ -1398,7 +1398,7 @@ button:disabled {
   .footer-bottom {
     flex-direction: row;
   }
-}
+/* } */
 
 /* ------------------------------------ */
 /*          DESKTOP RESOLUTION          */
@@ -1494,4 +1494,4 @@ button:disabled {
 }
 
 /* end of stylesheet */
-  transition: opacity 0.9s ease,
+ 
