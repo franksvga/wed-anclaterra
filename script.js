@@ -205,4 +205,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===================== END CONTACT FORM =====================
   // REMINDER: Don't forget to set up domain whitelisting in EmailJS!
   // This prevents unauthorized use of your credentials from other domains.
+
+  // ===================== CLIENTS CAROUSEL =====================
+  const clientItems = document.querySelectorAll('.clientes-carousel__item');
+  let currentClient = 0;
+  const clientInterval = 3500; // Time in milliseconds for each logo
+
+  if (clientItems.length > 0) {
+    setInterval(() => {
+      clientItems[currentClient].classList.remove('active');
+      currentClient = (currentClient + 1) % clientItems.length;
+      clientItems[currentClient].classList.add('active');
+    }, clientInterval);
+  }
 });
