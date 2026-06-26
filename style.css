@@ -563,62 +563,126 @@ h2 {
 /*--------------------------------
          CLIENTS CAROUSEL
 ---------------------------------*/
-.clientes-section {
-  background: #f5f5f7;
-  padding: 4rem 1rem;
+.clients{
+    padding:80px 0;
+    background:#fff;
 }
 
-.clientes-carousel {
-  position: relative;
-  max-width: 20rem;
-  margin: 0 auto;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.clients h2{
+    text-align:center;
+    margin-bottom:1rem;
+    font-size:2rem;
 }
 
-.clientes-carousel__track {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: var(--color-white);
-  border-radius: 1rem;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  overflow: hidden;
+.logo-slider{
+    overflow:hidden;
+    position:relative;
+    width:100%;
 }
 
-.clientes-carousel__item {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-  pointer-events: none;
-  padding: 1.5rem;
+.logo-track{
+    display:flex;
+    align-items:center;
+    width:max-content;
 }
 
-.clientes-carousel__item.active {
-  opacity: 1;
-  pointer-events: auto;
+.logo{
+    flex:0 0 auto;
+    width:180px;
+    margin:0 40px;
 }
 
-.clientes-carousel__item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+.logo img{
+    width:100%;
+    height:80px;
+    object-fit:contain;
+
+    /* filter:grayscale(100%); */
+    opacity:.7;
+
+    transition:.3s;
 }
 
-.clientes-carousel__item img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+.logo img:hover{
+    filter:none;
+    opacity:1;
+    transform:scale(1.05);
 }
+
+.logo-track{
+    display:flex;
+    width:max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.logo-slider:hover .logo-track{
+    animation-play-state:paused;
+}
+
+@keyframes scroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+.logo-slider::before,
+.logo-slider::after{
+
+    content:"";
+    position:absolute;
+    top:0;
+    width:120px;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+
+}
+
+.logo-slider::before{
+
+    left:0;
+
+    background:linear-gradient(
+        to right,
+        white,
+        transparent
+    );
+
+}
+
+.logo-slider::after{
+
+    right:0;
+
+    background:linear-gradient(
+        to left,
+        white,
+        transparent
+    );
+
+}
+
+@media (max-width:768px){
+
+.logo{
+    width:120px;
+    margin:0 20px;
+}
+
+.logo img{
+    height:60px;
+}
+
+}
+
+
+
+
 
 @media (max-width: 680px) {
   .descarga-catalogos-cta .button--large {
