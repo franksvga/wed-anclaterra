@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const revealElements = document.querySelectorAll('.animate-on-scroll');
   const revealOptions = {
     root: null,
-    rootMargin: '0px 0px -15% 0px',
+    rootMargin: '0px 0px -5% 0px',
     threshold: 0.1
   };
 
@@ -212,17 +212,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // track.innerHTML += track.innerHTML;
   // ===================== END CLIENTS CAROUSEL =====================
 
-  const track = document.querySelector(".logo-track");
+  // var copy = document.querySelector(".logo-track").cloneNode(true);
+  // document.querySelector(".logo-slider").appendChild(copy);
 
-  track.innerHTML += track.innerHTML;
+  // const track = document.querySelector(".logo-track");
 
-  const logos = track.querySelectorAll(".logo");
+  // track.innerHTML += track.innerHTML;
 
-  const singleSetWidth = track.scrollWidth / 2;
+  // const logos = track.querySelectorAll(".logo");
 
-  // Pixels per second
-  const speed = 400;
+  // const singleSetWidth = track.scrollWidth / 2;
 
-  track.style.animationDuration = `${singleSetWidth / speed}s`;
+  // // Pixels per second
+  // const speed = 400;
+
+  // track.style.animationDuration = `${singleSetWidth / speed}s`;
 
 });

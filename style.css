@@ -89,6 +89,32 @@ button {
   background: #009087;
 }
 
+/* global scroll/animation helpers (kept at top with globals) */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.9s ease,
+              transform 0.9s ease;
+  transform: translateY(2rem);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* duplicate animate block (preserved) */
+/* .animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.9s ease,
+              transform 0.9s ease;
+  transform: translateY(3rem);
+} */
+
+/* .animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
+ 
 .top-bar {
   display: flex;
   justify-content: flex-end;
@@ -183,32 +209,6 @@ button {
   font-size: 1.2rem;
   color: var(--color-text);
 }
-
-/* global scroll/animation helpers (kept at top with globals) */
-.animate-on-scroll {
-  opacity: 0;
-  transition: opacity 0.9s ease,
-              transform 0.9s ease;
-  transform: translateY(2rem);
-}
-
-.animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* duplicate animate block (preserved) */
-/* .animate-on-scroll {
-  opacity: 0;
-  transition: opacity 0.9s ease,
-              transform 0.9s ease;
-  transform: translateY(3rem);
-} */
-
-/* .animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-} */
 
 @keyframes zoomIn {
   from {
@@ -575,6 +575,7 @@ h2 {
 }
 
 .logo-slider{
+    display: flex;
     overflow:hidden;
     position:relative;
     width:100%;
@@ -612,7 +613,7 @@ h2 {
 .logo-track{
     display:flex;
     width:max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 .logo-slider:hover .logo-track{
@@ -626,7 +627,7 @@ h2 {
     }
 
     to{
-        transform:translateX(-50%);
+        transform:translateX(-100%);
     }
 
 }
@@ -1799,7 +1800,7 @@ button:disabled {
   .product_panel {
     /* position: absolute; */
     background: var(--color-white);
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     max-width: 36rem;
     bottom: -15%;
     border-radius: 1rem;
